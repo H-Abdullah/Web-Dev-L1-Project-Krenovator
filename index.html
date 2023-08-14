@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./resources/css/web-dev-l1.css">
+  <script src="./resources/js/main.js" defer></script>
+  <script src="https://kit.fontawesome.com/f5298cc69b.js" crossorigin="anonymous"></script>
+  <title>Web Dev Level 1</title>
+</head>
+<body>
+  <div id="main-wrapper" class="flexbox">
+    <div id="header-wrapper" class="flexbox">
+      <div id="sidebar-toggle" onclick="sideBarToggle()">
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </div>
+      <div id="darkmode-toggle-wrapper" class="flexbox">
+        <input type="checkbox" id="darkmode-input"></input>
+        <label id="darkmode-label" for="darkmode-input"></label>
+      </div>
+    </div>
+    <div id="content-wrapper" class="flexbox">
+      <div id="side-bar" class="flexbox">
+        <div id="close-btn-wrapper" class="flexbox" onclick="sideBarToggle()">
+          <i class="fa-solid fa-xmark fa-lg"></i>
+        </div>
+      </div>
+      <div id="main-content" class="flexbox">
+        <div id="user-banner" class="flexbox"></div>
+        <div id="statistic-banner" class="flexbox"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
