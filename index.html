@@ -16,13 +16,25 @@
       </div>
       <div id="darkmode-toggle-wrapper" class="flexbox">
         <input type="checkbox" id="darkmode-input"></input>
-        <label id="darkmode-label" for="darkmode-input"></label>
+        <label id="darkmode-label" for="darkmode-input" onclick="toggleTheme()"></label>
       </div>
     </div>
     <div id="content-wrapper" class="flexbox">
       <div id="main-content" class="flexbox">
-        <div id="info-wrapper" class="flexbox"></div>
-        <div id="form-wrapper" class="flexbox">Form Wrapper</div>
+        <div id="info-wrapper" class="flexbox light-bg"></div>
+        <div id="form-wrapper" class="flexbox">
+          <fieldset id="form-border" class="flexbox">
+            <form action="#" class="flexbox">
+              <div class="flexbox">
+                <input type="text" id="firstname" placeholder="firstname">
+                <input type="text" id="lastname" placeholder="lastname">
+              </div>
+              <input type="text" id="email" placeholder="email">
+              <input type="text" id="password" placeholder="password">
+              <input type="number" id="phone-number" placeholder="phone number">
+            </form>
+          </fieldset>
+        </div>
       </div>
     </div>
   </div>

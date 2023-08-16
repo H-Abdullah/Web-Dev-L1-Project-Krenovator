@@ -112,15 +112,33 @@ body {
 
 #info-wrapper {
   width: 50vw;
-  height: 100%;
-  background-image: url('./resources/images/bg-img.jpg');
-  background-size: cover;
+  height: 93vh;
+  background-size: 50vw 100%;
   background-repeat: no-repeat;
-  border: 1px solid black;
+  transition: background-image 1s ease;
+}
+
+.light-bg {
+  background-image: url('./../images/light-bg.jpg');
+}
+
+.dark-bg {
+  background-image: url('./../images/dark-bg.jpg');
 }
 
 #form-wrapper {
   width: 50vw;
   height: 100%;
-  border: 1px solid black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#form-border {
+  min-width: 30vw;
+  height: 80vh;
+}
+
+#form-border > form {
+  flex-direction: column;
 }
